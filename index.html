@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에이포스솔라시스템 - 태양광 에너지 솔루션</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1>에이포스솔라시스템</h1>
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="#about">회사소개</a></li>
+                    <li><a href="rental.html">지붕임대</a></li>
+                    <li><a href="#contact">문의</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>비어있는 지붕으로 수익을 만들어보세요</h1>
+            <h2>RE100 실현과 산업용 전기 요금 고민을 줄이는 가장 현명한 선택</h2>
+            <p>에이포스솔라시스템이 만드는 에너지 전환의 비즈니스 가치</p>
+            <a href="rental.html" class="btn">자세히 보기</a>
+        </div>
+    </section>
+
+    <section class="benefits" id="services">
+        <h2>에이포스솔라시스템의 비즈니스 가치</h2>
+        <div class="benefit-cards">
+            <div class="card">
+                <h3>kWh당 140원</h3>
+                <p>자가소비형 태양광 발전소를 통해 전력을 직접 공급 받아 사용하는 방식으로 비용 절약 가능합니다.</p>
+            </div>
+            <div class="card">
+                <h3>RE100 실현</h3>
+                <p>재생에너지로 만든 전기는 첨단산업 유치를 이끌 핵심 경쟁력으로 글로벌 경쟁력을 확보합니다.</p>
+            </div>
+            <div class="card">
+                <h3>발전소 운영 관리</h3>
+                <p>발전소 공정 및 효율 관리, 이상 진단 등 태양광 발전소 운영의 전 과정을 첨단 기술을 활용해 효율적으로 관리합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <h2>에이포스솔라시스템 추진 현황</h2>
+        <div class="stat-items">
+            <div class="stat">
+                <h3>1,000 가구+</h3>
+                <p>국내 가구 전기 공급 서비스</p>
+            </div>
+            <div class="stat">
+                <h3>3,000 개+</h3>
+                <p>운영 관리 중인 발전소</p>
+            </div>
+            <div class="stat">
+                <h3>50,000 kW+</h3>
+                <p>누적 전기 생산량</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>에이포스솔라시스템 서비스</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>자가소비형</h3>
+                <p>태양광 전력 계약 - 안정적인 전력 공급망을 통해 산업 경쟁력을 키워보세요.</p>
+            </div>
+            <div class="service-card">
+                <h3>임대수익형</h3>
+                <p>임대 수익 받기 - 유휴 지붕 임대로 20년 임대 수익을 받아보세요.</p>
+            </div>
+            <div class="service-card">
+                <h3>인센티브형</h3>
+                <p>지붕 소개 하기 - 발전소 설치가 가능한 지붕, 임대인을 소개하고 인센티브를 받아보세요.</p>
+            </div>
+            <div class="service-card">
+                <h3>영업전문가형</h3>
+                <p>영업 지원 하기 - 에이포스솔라시스템 상품 영업을 통해 영업 인센티브를 받아보세요.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>문의하기</h2>
+        <p>에이포스솔라시스템에 대해 궁금한 점이 있으시면 언제든 문의해 주세요.</p>
+        <button id="contactBtn" class="btn">문의하기</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 에이포스솔라시스템. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>맞춤 상담</h2>
+            <p>에이포스솔라시스템의 태양광 솔루션에 대해 자세히 알아보세요.</p>
+            <a href="rental.html" class="btn">임대 수익 알아보기</a>
+        </div>
+    </div>
+
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content contact-form">
+            <span class="close" id="contactClose">&times;</span>
+            <h2>문의 신청</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">신청인 이름</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">신청인 전화번호</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="region">설치예정지역</label>
+                    <input type="text" id="region" name="region" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">통화 편한시간</label>
+                    <select id="time" name="time" required>
+                        <option value="">선택하세요</option>
+                        <option value="morning">오전 (9:00-12:00)</option>
+                        <option value="afternoon">오후 (12:00-18:00)</option>
+                        <option value="evening">저녁 (18:00-21:00)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일 주소</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn">신청하기</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
