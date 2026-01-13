@@ -585,3 +585,8 @@ footer {
     margin: 5px 0;
     font-size: 0.9em;
 }
+
+.footer-content .copyright {
+    font-size: 1.2em;
+    font-weight: bold;
+}
