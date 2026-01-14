@@ -2,16 +2,21 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('에이포스솔라시스템 웹사이트 로드됨');
     
-    // Smooth scrolling for nav links
+    // Smooth scrolling for nav links (only for anchor links on same page)
     const navLinks = document.querySelectorAll('nav a');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-            if (targetSection) {
-                targetSection.scrollIntoView({ behavior: 'smooth' });
+            const href = this.getAttribute('href');
+            // Only prevent default for anchor links (starting with #)
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
             }
+            // For other links (like index.html, rental.html), let them work normally
         });
     });
 
